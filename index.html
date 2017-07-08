@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>inVoice — Студия звукозаписи</title>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+</head>
+<body>
+	<div class="wrapper-full"> 
+		<div class="homescreen" id="homescreen">
+			<div id="closeblock"></div>
+			<header>
+				<div class="navigationblock">
+					<div class="logo">
+						<a href="#homescreen"><img src="img/logo.png" alt="Brand"/></a>
+					</div>
+					<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+					<label for="nav-trigger"></label>
+					<nav>
+						<ul>
+							<li class="dropdown"><a class="navigation" href="#">УСЛУГИ</a>
+								<ul>
+									<li><a class="navigation" href="#devices">ТЕХНИКА</a></li>
+									<li><a class="navigation" href="#prices">ЦЕНЫ</a></li>
+								</ul>
+							</li>
+							<li><a class="navigation" href="#about-us">О НАС</a></li>
+							<li><a class="navigation" href="#clients">КЛИЕНТЫ</a></li>
+							<li><a class="navigation" href="#contact">КОНТАКТЫ</a></li>
+						</ul>
+					</nav>
+				</div>	
+			</header>
+			<div class="banner">
+				<img src="img/brand.png" alt="Brand"/>
+				<h1>inVOICE</h1>
+				<h3>СТУДИЯ ЗВУКОЗАПИСИ</h3>
+				<a class="button-record" href="#form">ЗАБРОНИРОВАТЬ ЗАПИСЬ</a>
+			</div>
+		</div>	
+		<div class="services" id="services">
+			<div class="max-width">
+				<div class="devices" id="devices">
+					<h2>ОБОРУДОВАНИЕ</h2>
+					<div class="row">
+						<div class="device compressors">
+							<div class="image">
+								<img src="img/compressors.png" alt="Compressors"/>
+							</div>
+							<a class="button" href="#">КОМПРЕССОРЫ</a>
+						</div>
+						<div class="device magnitophons">
+							<div class="image">
+								<img src="img/magnitophons.png" alt="magnitophons"/>
+							</div>
+							<a class="button" href="#">МАГНИТОФОНЫ</a>
+						</div>
+						<div class="device instruments">
+							<div class="image">
+								<img src="img/instruments.png" alt="instruments"/>
+							</div>
+							<a class="button" href="#">ИНСТРУМЕНТЫ</a>
+						</div>
+					<!-- </div>
+					<div class="row"> -->
+						<div class="device mixers">
+							<div class="image">
+								<img src="img/mixers.png" alt="mixers"/>
+							</div>
+							<a class="button" href="#">МИКШЕРЫ</a>
+						</div>
+						<div class="device monitors">
+							<div class="image">
+								<img src="img/monitors.png" alt="monitors"/>
+							</div>
+							<a class="button" href="#">МОНИТОРЫ</a>
+						</div>
+						<div class="device microphones">
+							<div class="image">
+								<img src="img/microphons.png" alt="microphones"/>
+							</div>
+							<a class="button" href="#">МИКРОФОНЫ</a>
+						</div>
+					</div>
+				</div>
+				<div class="prices" id="prices">
+					<h2>ЦЕНЫ</h2>
+					<div class="row">
+						<div class="col-33">
+							<img src="img/record.png" alt="record"/>
+							<span class="visible grey">ЗАПИСЬ
+							</span>
+							<span class="hidden green">30$/час</span>
+						</div>
+						<div class="col-33">
+							<img src="img/reduction.png" alt="reduction">
+							<span class="visible grey">СВЕДЕНИЕ
+							</span>
+							<span class="hidden green">25$/трек</span>
+						</div>
+						<div class="col-33">
+							<img src="img/mastering.png" alt="mastering">
+							<span class="visible grey">МАСТЕРИНГ
+							</span>
+							<span class="hidden green">30$/трек</span>
+						</div>
+					</div>
+					<a class="button-record" href="#form">ЗАБРОНИРОВАТЬ ЗАПИСЬ</a>
+				</div>
+			</div>	
+		</div>
+		<div class="about-us" id="about-us">
+			<div class="who" id="who">
+				<div class="who_max-width">
+					<h2>КТО МЫ?</h2>
+					<div class="row">
+						<div class="worker">
+							<figure>
+								<img src="img/churin.png" alt="Maxim Churin">
+								<figcaption>
+									<span class="name">Максим Чурин</span>
+									<span class="work">менеджер</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="worker">
+							<figure>
+								<img src="img/borisov.png" alt="Vlad Borisov">
+								<figcaption>
+									<span class="name">Влад Борисов</span>
+									<span class="work">звукорежиссер</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="worker">
+							<figure>
+								<img src="img/depp.png" alt="Mark Depp">
+								<figcaption>
+									<span class="name">Марк Депп</span>
+									<span class="work">техник</span>
+								</figcaption>
+							</figure>
+						</div>	
+                 <!-- 					</div>
+					<div class="row"> -->
+						<div class="worker">
+							<figure>
+								<img src="img/jobs.png" alt="Steve Jobs">
+								<figcaption>
+									<span class="name">Стив Джобс</span>
+									<span class="work">звукооператор</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="worker">	
+							<figure>
+								<img src="img/huchkov.png" alt="Oleg Guchkov">
+								<figcaption>
+									<span class="name">Олег Гучков</span>
+									<span class="work">микрофонный оператор</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="worker">	
+							<figure>
+								<img src="img/nazarov.png" alt="Denis Nazarov">
+								<figcaption>
+									<span class="name">Денис Назаров</span>
+									<span class="work">ассистент</span>
+								</figcaption>
+							</figure>
+						</div>	
+					</div>
+				</div>	
+			</div>	
+			<div class="what" id="what">
+				<h2>ЧТО МЫ ДЕЛАЕМ?</h2>
+				<section class="white">
+					<h3>ЗАПИСЬ ВОКАЛА</h3>
+					<p>Голос - самый важный и сложный музыкальный инструмент, поэтому именно записи вокала уделяется особое внимание. Для записи вокала мы используем конденсаторный микрофон с большой диафрагмой. Так же вокал подвергается первичной компрессии, что позволяет Вашему голосу звучать богато, приближенно, и с сохранением именно Вашими характерными особенностями.</p>
+				</section>
+				<section class="green">
+					<h3>ТЮНИНГ ВОКАЛА</h3>
+					<p>Тюнинг вокала - это выравнивание Вашей вокальной партии по высоте с целью точного попадания в нужные ноты.
+					Современные технологии позволяют исправить огрехи Вашего вокала и заставить Ваш голос звучать ровно и точно в ноты. Любая вокальная партия, спетая мимо нот, может зазвучать идеально. </p>
+				</section>
+				<section class="white">
+					<h3>ДИКТОРСКАЯ ОЗВУЧКА</h3>
+					<p>Профессиональная запись голоса для озвучки аудиокниг, игр, аудио-учебников и других нужд осуществляется с соблюдением всех необходимых требований к данным видам работы.
+					При записи используются либо высококачественные петличные микрофоны, либо вокальный конденсаторный микрофон с большой диафрагмой. Запись происходит в специально спроектированном </p>
+				</section>
+				<section class="green">
+					<h3>СВЕДЕНИЕ</h3>
+					<p>Сведение - основная часть работы, которая ложиться на плечи звукорежиссёра. Более того - это самый важный этап работы. На данном этапе необходимо собрать воедино все исходники, сыгранные Вами, и получить качественный микс. Помимо отбора дублей, нарезки, компановки, все треки обрабатываются нужными эффектами: компрессорами, эквалайзерами, дилеями, и т.д. Живые барабаны обогащаются сэмплами.</p>
+				</section>
+				<section class="white">
+					<h3>МАСТЕРИНГ</h3>
+					<p>Мастеринг - это процесс финальной обработки уже сведенного микса. Его часто называют "причёсыванием" микса. Это процедура, без которой добиться качественного и динамичного звучания просто невозможно.
+					На слух разница в звучании до мастеринга и после очевидна. Это, как говориться "небо и земля". Микс после мастеринга может быть описан как: более ровный, имеющий большую по сравнению с исходником </p>
+				</section>
+				<section class="green">
+					<h3>НАПИСАНИЕ МУЗЫКИ И АРАНЖИРОВКА</h3>
+					<p>Если в вашей голове созревает уникальная мелодия или композиция под ваш текст, но вы не знаете как перенести её в живую музыку – музыканты студии inVoice вам в этом помогут!
+					Качественная аранжировка на ударной установке, гитарах и бас гитаре, а так же на клавишных музыкальных инструментах позволят вам получить свою собственную, неповторимую композицию!</p>
+				</section>
+			</div>
+		</div>
+		<div class="clients" id="clients">
+			<div class="max-width">
+				<h2>НАШИ КЛИЕНТЫ</h2>
+				<div class="slider">
+					<a class="nav-left" href="#"><img src="img/privious.png" alt="privious"></a>
+					<div class="content">
+						<div class="slide">
+							<div class="block-disk">
+								<img src="img/disk.png" alt="album">
+							</div>
+							<div class="table">
+								<div class="name">
+									<div class="name2">
+										<span>исполнитель:</span>
+										<span>альбом:</span>
+										<span>жанр:</span>
+										<span>длительность:</span>
+										<span>год:</span>
+										<span>дата выпуска:</span>
+									</div>	
+								</div>
+								<div class="value">
+									<div class="value2">
+										<span>IMAGINE DRAGONS</span>
+										<span>NIGHT</span>
+										<span>альтернативный рок</span>
+										<span>42 минуты</span>
+										<span>2009-2012</span>
+										<span>4 сентября 2012</span>
+									</div>		
+								</div>
+							</div>
+						</div>
+						<!-- <div class="slide">
+							<img src="#" alt="album">
+							<div class="table">	
+								<div class="name">
+									<span>исполнитель:</span>
+									<span>альбом:</span>
+									<span>жанр:</span>
+									<span>длительность:</span>
+									<span>год:</span>
+									<span>дата выпуска:</span>
+								</div>
+								<div class="value">
+									<span>СПЛИН</span>
+									<span>ОБМАН ЗРЕНИЯ</span>
+									<span>инди-рок</span>
+									<span>42 минуты</span>
+									<span>2010-2012</span>
+									<span>8 октября 2012</span>	
+								</div>						
+							</div>
+						</div>
+						<div class="slide">
+							<img src="#" alt="album">
+							<div class="table">
+								<div class="name">
+									<span>исполнитель:</span>
+									<span>альбом:</span>
+									<span>жанр:</span>
+									<span>длительность:</span>
+									<spa
+									<span>дата выпуска:</span>
+
+								</div>
+								<div class="value">
+									<span>30 SECOND TO MARS</span>
+									<span>A BEAUTIFUL LIFE</span>
+									<span>альтернативный рок</span>
+									<span>54 минуты</span>
+									<span>2004-2005</span>
+									<span>7 апреля 2005</span>
+								</div>
+							</div>
+						</div> -->
+					</div>
+					<a class="nav-right" href="#"><img src="img/next.png" alt="next"></a>
+				</div>
+			</div>	
+		</div>
+		<div class="contact" id="contact">
+			<div class="max-width">
+				<h2>СВЯЖИТЕСЬ С НАМИ</h2>
+				<p>Готовы записать новый хит или желаете узнать больше о наших услугах? Заполните форму ниже и наш консультант свяжется с Вами в течении 5 минут!</p>
+				<div class="row">
+					<div class="col-50 info">
+						<div class="place information">
+							<div class="image">
+								<img src="img/place.png" alt="map marker"/>
+							</div>
+							<span>г.Киев,<br>проспект Свободы, 30</span>
+						</div>	
+						<div class="message information">
+							<div class="image">
+								<img src="img/message.png" alt="message"/>
+							</div>	
+							<span>invoice@gmail.com</span>
+						</div>
+						<div class="telephone information">
+							<div class="image">
+								<img src="img/telephone.png" alt="telephon">
+							</div>
+							<span>+38 (095) 95 95</span>
+						</div>	
+						<div class="skype information">
+							<div class="image">
+								<img src="img/skype.png" alt="skype">
+							</div>	
+							<span>invoice</span>
+						</div>
+					</div>
+					<div class="bgmodalform" id="bgmodalform">
+					</div>
+					<div class="form" id="modalform">
+						<form method="post" id="form1" onSubmit="return validate(this)">
+							<input type="text" name="firstname" placeholder="name"/>
+							<input type="email" name="e_mail" placeholder="e-mail"/>
+							<input type="text" name="phone" placeholder="phone"/>
+							<textarea type="text" name="message" placeholder="message"></textarea>
+							<input class="button-send" id="modalsend" value="ОТПРАВИТЬ" type="submit" />
+						</form>
+					</div>
+					<div class="col-50 form">
+						<form method="post" id="form" onSubmit="return validate(this)">
+							<input type="text" name="firstname" placeholder="name"/>
+							<input type="email" name="e_mail" placeholder="e-mail"/>
+							<input type="text" name="phone" placeholder="phone"/>
+							<textarea type="text" name="message" placeholder="message"></textarea>
+						</form>
+					</div>
+				</div>
+				<button class="button-send" id="send">ОТПРАВИТЬ</button>
+			</div>	
+		</div>
+			<footer>	
+				<div class="social-networks">
+					<a class="vk" href="#"><img src="img/vk.png" alt="VK"></a>
+					<a class="facebook" href="#"><img src="img/facebook.png" alt="Facebook"></a>
+					<a class="twitter" href="#"><img src="img/twitter.png" alt="Twitter"></a>
+				</div>
+			</footer>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
